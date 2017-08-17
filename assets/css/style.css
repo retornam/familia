@@ -1,0 +1,310 @@
+/************************************************************
+* RESET
+************************************************************/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+textarea,
+select,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+table, td, th {
+  vertical-align: middle;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+a img {
+  border: none;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  text-align: center;
+  color: #fff;
+  background-color: #090909;
+}
+/************************************************************
+* PAGE
+************************************************************/
+
+div {
+        display: block
+}
+
+#main {
+  width: 60em;
+	height: 40em;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -20em 0 0 -30em;
+}
+
+h1 {
+        background: url(rogue.png) 0 0 no-repeat;
+        text-indent: -999em;
+        margin: 0 auto 1em;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        height: 53px;
+        width: 263px
+}
+
+h1 a {
+        display: block;
+        height: 53px;
+        width: 263px
+}
+
+h2 {
+	font: 0.8em DidotLTPro-Roman, Georgia, serif;
+	text-transform: uppercase;
+	letter-spacing: 1.9em;
+	margin: 1em auto 2em;
+	padding-left: 2.2em;
+	color: #999
+}
+
+h3 {
+        font: 1.4em DidotLTPro-Roman, Georgia, serif;
+        text-transform: uppercase;
+	letter-spacing: 0.1em;
+        display: inline-block;
+        line-height: 1.167;
+	margin-bottom: 1.167em;
+	font-weight: bold
+}
+
+h3::before, h3::after { 
+	letter-spacing: 0.5em;
+	font-weight: normal;
+	color: #999
+}
+
+h3::before {
+	content: ":%\#"
+}
+
+h3::after {
+	content: "!@&"
+}
+
+a:link, a:visited {
+	text-decoration: none;
+        color: #eee
+}
+
+a:active, a:hover {
+	text-decoration: underline;
+        color: #fff
+}
+
+strong {
+        font-weight: bold
+}
+
+small {
+        font-size: 0.9em
+}
+
+#header {
+	position: relative;
+	width: 100%
+}
+
+#content, #footer {
+    margin: 0 auto;
+    width: 60em
+}
+
+p, li {
+    text-align: justify;
+    text-justify: inner-character;
+    line-height: 1.167;
+    margin: 1.167em 0 0.167em
+}
+
+p {
+  font: 2.8em DidotLTPro-Roman, Georgia, serif;
+  text-justify: inter-character;
+  hyphenate: auto;
+}
+
+abbr {
+  letter-spacing: 0.1em;
+}
+
+.kern { letter-spacing: -0.05em; }
+
+li {
+  font: 1.8em Georgia, serif;
+}
+
+p + p {
+    font-size: 1.4em;
+    line-height: 1.5;
+    margin: 0 0 1.5em;
+    text-indent: 1em
+}
+
+ul {
+  display: none; /* tmp */
+	margin-bottom: 2.62em;
+	font-size: 0.8em;
+	list-style-type: none;
+	text-align: center
+}
+
+ul::before, ul::after {
+        letter-spacing: 3em;
+        color: #999
+}
+
+ul::before {
+        content: ":%\#"
+}
+
+ul::after {
+        content: "!@&"
+}
+
+ul li {
+	margin: 0 1em;
+	display: inline;
+	color: #999
+}
+
+ul li:first-child {
+	margin-left: 0
+}
+
+ul li a:link, ul li a:visited {
+	color: #999
+}
+
+span.al {
+        background: url(al.png) 0 0 no-repeat;
+        text-indent: -999em;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        height: 82px;
+        width: 82px
+}
+
+span.al a {
+        display: block;
+        height: 82px;
+        width: 82px
+}
+
+/* Clearing floats */
+
+#header:after, #content:after, #footer:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: ".";
+        clear: both;
+        height: 0
+}
+
+#header, #content, #footer {
+        display: inline-block
+}
+
+/* Hides from IE-mac \*/
+#header, #content, #footer {
+        display: block
+}
+
+.q_back {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+  text-align: center;
+}
+.q_back canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.q_back p {
+  margin: -1.5em;
+  font-size: 20em;
+  line-height: 1;
+  color: #000;
+}
